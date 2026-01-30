@@ -95,3 +95,6 @@ yarn-debug.log*
 yarn-error.log*
 .pnp.*
 .pnp.js
+
+# keep example env files in repo
+!.env.example
