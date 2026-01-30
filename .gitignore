@@ -1,0 +1,97 @@
+# ---- OS & editor metadata ----
+.DS_Store
+Thumbs.db
+Icon?
+.Spotlight-V100
+.Trashes
+*~
+*.swp
+.idea/
+.vscode/
+
+# ---- Python bytecode / artifacts ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ---- Environments ----
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+__pypackages__/
+.python-version
+
+# ---- Packaging / build ----
+build/
+dist/
+develop-eggs/
+eggs/
+.eggs/
+sdist/
+var/
+wheels/
+share/python-wheels/
+pip-wheel-metadata/
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+site/
+wheelhouse/
+
+# ---- Testing / coverage ----
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.py,cover
+htmlcov/
+.pytest_cache/
+.hypothesis/
+
+# ---- Type checker / linter caches ----
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+.cache/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- Logs ----
+logs/
+*.log
+
+# ---- Secrets & env files ----
+.env
+.env.*
+.envrc
+.env.local
+secret.*
+secrets.*
+streamlit_app/.streamlit/secrets.toml
+!streamlit_app/.streamlit/secrets.toml.example
+
+# ---- Project outputs & temp data ----
+outputs/*
+!outputs/.gitkeep
+data/tmp/
+data/generated/
+tmp/
+*.sqlite3
+
+# ---- Docker / compose local overrides ----
+docker/*.local.yml
+*.pid
+
+# ---- Node (future-proofing; Streamlit components, etc.) ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp.*
+.pnp.js

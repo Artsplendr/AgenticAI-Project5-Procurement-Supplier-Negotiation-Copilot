@@ -1,0 +1,52 @@
+{
+    "deal_id": "DEAL-DEMO-001",
+    "package": "WTG+LTSA",
+    "supplier_name": "Battila Turbines",
+    "round_number": 0,
+    "last_supplier_email_subject": null,
+    "last_supplier_email_received_at": null,
+    "supplier_ask": null,
+    "our_position": {
+      "target_price_change_pct": { "value": 2.0 },
+      "max_price_change_pct": { "value": 4.0 },
+      "preferred_trades": [
+        "extend LTSA term by 2 years",
+        "indexation cap/floor with transparency",
+        "bundle critical spares package"
+      ],
+      "notes": "Internal view only. Do not disclose targets to supplier."
+    },
+    "open_issues": [
+      {
+        "topic": "Indexation clause (cap/floor + transparency)",
+        "status": "open",
+        "detail": "Prefer capped indexation rather than high fixed uplift."
+      },
+      {
+        "topic": "Delay LDs cap (delivery milestones)",
+        "status": "open",
+        "detail": "LDs = Liquidated Damages. Ensure cap and remedy structure are balanced."
+      },
+      {
+        "topic": "Availability guarantee definition",
+        "status": "open",
+        "detail": "Clarify calculation period, exclusions, and service credits."
+      }
+    ],
+    "concessions": [],
+    "manufacturing_slot_window": {
+      "start": null,
+      "end": null,
+      "notes": "To be confirmed by supplier."
+    },
+    "delivery_window": {
+      "start": null,
+      "end": null,
+      "notes": "To be confirmed by supplier."
+    },
+    "metadata": {
+      "project_region": "North Sea",
+      "buyer_org": "Demo Procurement",
+      "notes": "Synthetic demo deal state."
+    }
+  }

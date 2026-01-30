@@ -1,0 +1,31 @@
+/* Reduce top spacing across app and sidebar (~50%) */
+:root {
+  --owpa-top-padding: 1rem;
+}
+
+/* Main content container */
+.block-container {
+  padding-top: var(--owpa-top-padding) !important;
+}
+
+/* Sidebar content container */
+[data-testid="stSidebarContent"] {
+  /* reduce a further ~30% from previous setting */
+  padding-top: calc(var(--owpa-top-padding) * 0.40) !important;
+}
+
+/* Reduce top margin of first heading/content inside sidebar */
+[data-testid="stSidebarContent"] h1,
+[data-testid="stSidebarContent"] h2,
+[data-testid="stSidebarContent"] h3,
+[data-testid="stSidebarContent"] > :first-child {
+  margin-top: 0.25rem !important;
+}
+
+/* Optional: tighten spacing of success banner and tabs */
+[data-testid="stAlert"] {
+  margin-top: 0.5rem !important;
+}
+.stTabs {
+  margin-top: 0.25rem !important;
+}

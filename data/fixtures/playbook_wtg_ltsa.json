@@ -1,0 +1,115 @@
+{
+    "version": "1.0",
+    "package": "WTG+LTSA",
+    "package_explanation": "WTG = Wind Turbine Generator (turbine supply). LTSA = Long-Term Service Agreement (multi-year service contract).",
+    "allowed_intents": [
+      "price_increase_request",
+      "counter_to_our_offer",
+      "slot_pressure_deadline",
+      "contract_redline",
+      "info_request",
+      "other"
+    ],
+    "levers": {
+      "commercial": [
+        {
+          "name": "headline_price_uplift",
+          "description": "Change to base price (e.g., +9%).",
+          "example_trades": [
+            "Reduce uplift in exchange for longer LTSA term",
+            "Reduce uplift in exchange for earlier milestone payment"
+          ]
+        },
+        {
+          "name": "payment_terms",
+          "description": "Milestones, retainage, invoice timing; can improve supplier cashflow.",
+          "example_trades": [
+            "Earlier manufacturing start payment in exchange for lower uplift",
+            "Reduced payment security in exchange for price decrease"
+          ]
+        },
+        {
+          "name": "indexation",
+          "description": "Price adjustment mechanism tied to an index (inflation/materials).",
+          "example_trades": [
+            "Accept capped indexation instead of higher fixed uplift",
+            "Cap/floor + transparency in exchange for lower starting price"
+          ]
+        }
+      ],
+      "schedule": [
+        {
+          "name": "manufacturing_slot",
+          "description": "Factory reservation and delivery windows. Suppliers may use slot scarcity as leverage.",
+          "example_trades": [
+            "Provide delivery window flexibility in exchange for lower uplift",
+            "Commit to earlier technical freeze in exchange for slot confirmation"
+          ]
+        },
+        {
+          "name": "delay_LDs",
+          "description": "LDs = Liquidated Damages. Pre-agreed penalties for delay/performance failures; often capped.",
+          "example_trades": [
+            "Replace LD step-up with capped LD + recovery plan in exchange for price reduction",
+            "Lower LD cap in exchange for stronger reporting and recovery commitments"
+          ]
+        }
+      ],
+      "warranty_and_risk": [
+        {
+          "name": "warranty_terms",
+          "description": "Warranty duration, exclusions, and remedy structure (repair/replace/service credit).",
+          "example_trades": [
+            "Extend warranty in exchange for longer LTSA term",
+            "Narrow exclusions in exchange for modest uplift"
+          ]
+        },
+        {
+          "name": "liability_cap",
+          "description": "Maximum liability exposure; often excludes consequential damages.",
+          "example_trades": [
+            "Keep liability cap stable but clarify remedy hierarchy in exchange for lower uplift",
+            "Increase cap slightly only if price decreases and exclusions remain standard"
+          ]
+        }
+      ],
+      "service": [
+        {
+          "name": "availability_guarantee",
+          "description": "Guaranteed turbine availability (%). Definition and exclusions matter.",
+          "example_trades": [
+            "Improve availability guarantee in exchange for indexed service pricing",
+            "Tier service response times in exchange for lower uplift"
+          ]
+        },
+        {
+          "name": "service_scope",
+          "description": "Scope of service: spares, response times, condition monitoring, reporting.",
+          "example_trades": [
+            "Bundle spares package in exchange for lower service uplift",
+            "Add data access/remote diagnostics rights in exchange for improved terms"
+          ]
+        }
+      ]
+    },
+    "policy_thresholds": {
+      "price_uplift_pct_requires_internal_approval": 5.0,
+      "liability_cap_deviation_requires_legal": true,
+      "warranty_exclusion_changes_require_legal": true,
+      "ld_cap_change_requires_pm_and_legal": true
+    },
+    "output_rules": {
+      "never_invent_numbers": true,
+      "require_snippet_evidence_for_extracted_numbers": true,
+      "concession_must_have_get_for_any_give": true,
+      "external_email_must_not_disclose_internal_targets": true
+    },
+    "glossary": {
+      "WTG": "Wind Turbine Generator: the turbine unit and associated supply scope.",
+      "LTSA": "Long-Term Service Agreement: multi-year maintenance/service contract for the turbines.",
+      "LDs": "Liquidated Damages: pre-agreed penalties for specific failures (e.g., delay), often capped.",
+      "Availability guarantee": "A commitment that turbines are available to generate for a % of time; definition/exclusions matter.",
+      "Indexation": "A mechanism to adjust prices based on an agreed index (e.g., inflation/materials), often with a cap/floor.",
+      "Consequential damages": "Indirect losses (e.g., lost revenue). Often excluded or limited in contracts."
+    }
+  }

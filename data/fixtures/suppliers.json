@@ -1,0 +1,364 @@
+{
+    "version": "1.0",
+    "generated": true,
+    "notes": "Synthetic supplier memory fixtures for WTG+LTSA negotiation MVP. Not based on real suppliers.",
+    "suppliers": [
+      {
+        "supplier_id": "SUP-A-CAPACITY",
+        "name": "Battila Turbines",
+        "style": "deadline_driven",
+        "typical_tactics": [
+          "capacity scarcity (manufacturing slot pressure)",
+          "short-deadline anchoring",
+          "bundle service scope to defend headline price"
+        ],
+        "movement_preferences": {
+          "price": 0.25,
+          "payment_terms": 0.55,
+          "warranty_liability": 0.45,
+          "schedule_slots": 0.20,
+          "service_scope": 0.70
+        },
+        "successful_trades": [
+          "extend LTSA term (years) in exchange for lower uplift",
+          "increase planned spares scope to secure better service pricing",
+          "commit to condition monitoring data sharing to gain availability improvement"
+        ],
+        "sensitive_points": [
+          "resists stronger delay LD caps without compensation",
+          "pushes back on broad consequential damages language",
+          "prefers flexible delivery windows once slot reserved"
+        ],
+        "episodes": [
+          {
+            "context": "WTG+LTSA, North Sea, new build, slot reserved late",
+            "supplier_opening_ask_pct": 10.0,
+            "settled_pct": 4.0,
+            "primary_trade_used": "extend LTSA term by 2 years",
+            "outcome": "won",
+            "notes": "Supplier agreed to reduce uplift when service term extended; pushed slot deadline hard.",
+            "year": 2023
+          },
+          {
+            "context": "WTG supply only, Baltic, competitive tender",
+            "supplier_opening_ask_pct": 7.0,
+            "settled_pct": 3.5,
+            "primary_trade_used": "earlier milestone payment (manufacturing start)",
+            "outcome": "mixed",
+            "notes": "Payment acceleration helped, but supplier held firm on part of uplift citing materials.",
+            "year": 2022
+          },
+          {
+            "context": "LTSA renewal, North Sea, availability underperformance discussion",
+            "supplier_opening_ask_pct": 6.0,
+            "settled_pct": 2.5,
+            "primary_trade_used": "service scope adjustment (planned maintenance window flexibility)",
+            "outcome": "won",
+            "notes": "Supplier traded lower uplift for more flexible maintenance scheduling and fewer penalties.",
+            "year": 2024
+          },
+          {
+            "context": "WTG+LTSA, floating pilot, warranty clarification",
+            "supplier_opening_ask_pct": 8.0,
+            "settled_pct": 5.0,
+            "primary_trade_used": "limit expanded warranty carve-outs (mutual)",
+            "outcome": "lost",
+            "notes": "Supplier demanded higher uplift due to perceived technical risk; buyer accepted with tighter warranty wording.",
+            "year": 2021
+          },
+          {
+            "context": "WTG+LTSA, North Sea, schedule risk allocation",
+            "supplier_opening_ask_pct": 9.0,
+            "settled_pct": 3.0,
+            "primary_trade_used": "remove aggressive delay LD step-up; replace with capped LD + recovery plan",
+            "outcome": "won",
+            "notes": "Supplier moved when LD structure became more predictable; uplift reduced materially.",
+            "year": 2020
+          },
+          {
+            "context": "WTG+LTSA, Baltic, spares package included",
+            "supplier_opening_ask_pct": 5.0,
+            "settled_pct": 2.0,
+            "primary_trade_used": "increase spares scope (critical components)",
+            "outcome": "won",
+            "notes": "Supplier lowered uplift in exchange for expanded spares package and simplified service response SLAs.",
+            "year": 2024
+          },
+          {
+            "context": "WTG supply, North Sea, currency risk discussion",
+            "supplier_opening_ask_pct": 6.0,
+            "settled_pct": 3.5,
+            "primary_trade_used": "invoice currency alignment + hedging assumption clarified",
+            "outcome": "mixed",
+            "notes": "Supplier accepted a partial reduction once FX exposure clarified; still held some uplift.",
+            "year": 2022
+          },
+          {
+            "context": "LTSA add-on, North Sea, additional condition monitoring",
+            "supplier_opening_ask_pct": 4.0,
+            "settled_pct": 1.5,
+            "primary_trade_used": "data access + remote diagnostics rights",
+            "outcome": "won",
+            "notes": "Supplier accepted low uplift when granted a clear data access framework.",
+            "year": 2023
+          },
+          {
+            "context": "WTG+LTSA, North Sea, indexation clause negotiation",
+            "supplier_opening_ask_pct": 7.0,
+            "settled_pct": 3.0,
+            "primary_trade_used": "indexation cap/floor agreed (predictable)",
+            "outcome": "won",
+            "notes": "Supplier conceded once indexation was capped but allowed limited pass-through with transparency.",
+            "year": 2021
+          },
+          {
+            "context": "WTG+LTSA, Baltic, service credits structure",
+            "supplier_opening_ask_pct": 6.5,
+            "settled_pct": 2.5,
+            "primary_trade_used": "service credits definition simplified; remedy hierarchy clarified",
+            "outcome": "won",
+            "notes": "Supplier moved after remedy structure became less punitive and more operationally realistic.",
+            "year": 2020
+          }
+        ]
+      },
+      {
+        "supplier_id": "SUP-B-PRICE-ANCHOR",
+        "name": "Corealium OEM",
+        "style": "formal",
+        "typical_tactics": [
+          "anchor high on headline price uplift",
+          "offer discounts only via volume/term commitments",
+          "prefer indexation mechanisms over fixed reductions"
+        ],
+        "movement_preferences": {
+          "price": 0.30,
+          "payment_terms": 0.45,
+          "warranty_liability": 0.40,
+          "schedule_slots": 0.35,
+          "service_scope": 0.55
+        },
+        "successful_trades": [
+          "longer frame agreement / option for phase 2",
+          "indexation with cap/floor instead of higher fixed uplift",
+          "bundle spares + training for reduced service uplift"
+        ],
+        "sensitive_points": [
+          "avoids strong performance LDs tied to external factors",
+          "prefers defined availability calculation periods",
+          "pushes for indexation-based adjustments"
+        ],
+        "episodes": [
+          {
+            "context": "WTG+LTSA, North Sea, multi-phase development",
+            "supplier_opening_ask_pct": 11.0,
+            "settled_pct": 5.0,
+            "primary_trade_used": "phase 2 option commitment (conditional)",
+            "outcome": "won",
+            "notes": "Supplier accepted meaningful reduction when a phase 2 option letter was included.",
+            "year": 2024
+          },
+          {
+            "context": "WTG+LTSA, Baltic, fixed price vs indexation debate",
+            "supplier_opening_ask_pct": 8.0,
+            "settled_pct": 3.0,
+            "primary_trade_used": "indexation with cap/floor + transparency",
+            "outcome": "won",
+            "notes": "Supplier preferred capped indexation over pushing fixed uplift; buyer gained lower base uplift.",
+            "year": 2023
+          },
+          {
+            "context": "LTSA renewal, North Sea, service pricing reset",
+            "supplier_opening_ask_pct": 7.5,
+            "settled_pct": 4.0,
+            "primary_trade_used": "bundle spares + technician training for service uplift reduction",
+            "outcome": "mixed",
+            "notes": "Supplier reduced some uplift but maintained premium for specialist coverage.",
+            "year": 2022
+          },
+          {
+            "context": "WTG supply, North Sea, delivery window tightening",
+            "supplier_opening_ask_pct": 6.0,
+            "settled_pct": 3.5,
+            "primary_trade_used": "flexible delivery window + limited schedule LDs",
+            "outcome": "mixed",
+            "notes": "Supplier moved slightly; insisted on flexibility to manage factory loading.",
+            "year": 2021
+          },
+          {
+            "context": "WTG+LTSA, floating pilot, risk premium discussion",
+            "supplier_opening_ask_pct": 12.0,
+            "settled_pct": 7.0,
+            "primary_trade_used": "scope split (pilot risk separated from base scope)",
+            "outcome": "mixed",
+            "notes": "Separating pilot risk reduced the premium on the base package.",
+            "year": 2020
+          },
+          {
+            "context": "WTG+LTSA, North Sea, warranty extension request",
+            "supplier_opening_ask_pct": 6.5,
+            "settled_pct": 4.0,
+            "primary_trade_used": "warranty extension paid via service credit structure",
+            "outcome": "lost",
+            "notes": "Supplier held service uplift to fund warranty extension; buyer accepted due to risk posture.",
+            "year": 2023
+          },
+          {
+            "context": "LTSA, North Sea, availability guarantee definition",
+            "supplier_opening_ask_pct": 5.0,
+            "settled_pct": 2.0,
+            "primary_trade_used": "availability calculation clarified + exclusions narrowed",
+            "outcome": "won",
+            "notes": "Supplier reduced uplift once availability metrics became operationally clearer.",
+            "year": 2021
+          },
+          {
+            "context": "WTG supply, Baltic, payment security discussion",
+            "supplier_opening_ask_pct": 7.0,
+            "settled_pct": 4.5,
+            "primary_trade_used": "LC (letter of credit) requirement reduced in exchange for milestone discipline",
+            "outcome": "mixed",
+            "notes": "Supplier traded off security requirements; uplift reduction moderate.",
+            "year": 2022
+          },
+          {
+            "context": "WTG+LTSA, North Sea, service response times",
+            "supplier_opening_ask_pct": 6.0,
+            "settled_pct": 2.5,
+            "primary_trade_used": "service response tiering (critical vs non-critical)",
+            "outcome": "won",
+            "notes": "Tiering response times reduced supplier cost; they lowered uplift accordingly.",
+            "year": 2024
+          },
+          {
+            "context": "WTG+LTSA, Baltic, end-of-warranty transition",
+            "supplier_opening_ask_pct": 4.5,
+            "settled_pct": 2.0,
+            "primary_trade_used": "spares replenishment plan + inventory visibility",
+            "outcome": "won",
+            "notes": "Supplier agreed to lower uplift with clearer spares replenishment governance.",
+            "year": 2020
+          }
+        ]
+      },
+      {
+        "supplier_id": "SUP-C-RISK-STRICT",
+        "name": "Korulean Services",
+        "style": "aggressive",
+        "typical_tactics": [
+          "strict stance on warranty and liability caps",
+          "push back on broad indemnities",
+          "request risk premiums for tighter guarantees"
+        ],
+        "movement_preferences": {
+          "price": 0.35,
+          "payment_terms": 0.40,
+          "warranty_liability": 0.15,
+          "schedule_slots": 0.50,
+          "service_scope": 0.45
+        },
+        "successful_trades": [
+          "schedule flexibility in exchange for lower uplift",
+          "reduced liability exposure via clearer remedy hierarchy",
+          "service scope phased approach (base + option modules)"
+        ],
+        "sensitive_points": [
+          "rejects unlimited liability",
+          "strongly resists increased consequential damages exposure",
+          "prefers clear exclusions for force majeure"
+        ],
+        "episodes": [
+          {
+            "context": "WTG+LTSA, North Sea, liability cap negotiation",
+            "supplier_opening_ask_pct": 9.0,
+            "settled_pct": 6.0,
+            "primary_trade_used": "clarify remedy hierarchy; keep liability cap stable",
+            "outcome": "mixed",
+            "notes": "Supplier reduced uplift only after liability language stabilized; still demanded risk premium.",
+            "year": 2024
+          },
+          {
+            "context": "LTSA, Baltic, availability guarantee tightening",
+            "supplier_opening_ask_pct": 8.0,
+            "settled_pct": 6.5,
+            "primary_trade_used": "availability definition exclusions expanded slightly",
+            "outcome": "lost",
+            "notes": "Supplier held price; buyer accepted slightly broader exclusions to avoid higher uplift.",
+            "year": 2023
+          },
+          {
+            "context": "WTG supply, North Sea, schedule LD structure",
+            "supplier_opening_ask_pct": 7.0,
+            "settled_pct": 4.0,
+            "primary_trade_used": "replace LD step-up with capped LD + recovery plan",
+            "outcome": "won",
+            "notes": "Supplier moved when LD became predictable; schedule flexibility was key.",
+            "year": 2022
+          },
+          {
+            "context": "WTG+LTSA, floating pilot, technical risk premium",
+            "supplier_opening_ask_pct": 13.0,
+            "settled_pct": 9.0,
+            "primary_trade_used": "split pilot scope + option module for enhanced coverage",
+            "outcome": "mixed",
+            "notes": "Scope modularization reduced base premium but total cost still high if options chosen.",
+            "year": 2021
+          },
+          {
+            "context": "LTSA renewal, North Sea, payment term request",
+            "supplier_opening_ask_pct": 6.0,
+            "settled_pct": 4.0,
+            "primary_trade_used": "earlier payment milestone for spare parts stocking",
+            "outcome": "mixed",
+            "notes": "Supplier moved somewhat on uplift when cashflow improved for spares inventory.",
+            "year": 2020
+          },
+          {
+            "context": "WTG+LTSA, Baltic, force majeure clause debate",
+            "supplier_opening_ask_pct": 7.5,
+            "settled_pct": 5.0,
+            "primary_trade_used": "force majeure clarified + notice requirements tightened",
+            "outcome": "won",
+            "notes": "Supplier accepted reduction after FM became clearer and less open-ended.",
+            "year": 2022
+          },
+          {
+            "context": "WTG supply, North Sea, commissioning support scope",
+            "supplier_opening_ask_pct": 5.5,
+            "settled_pct": 3.5,
+            "primary_trade_used": "reduce on-site support days; add remote support",
+            "outcome": "won",
+            "notes": "Operational scope optimization enabled supplier to reduce uplift.",
+            "year": 2023
+          },
+          {
+            "context": "LTSA, North Sea, service credits structure",
+            "supplier_opening_ask_pct": 6.0,
+            "settled_pct": 5.0,
+            "primary_trade_used": "service credits capped; escalation path clarified",
+            "outcome": "lost",
+            "notes": "Supplier resisted broader service credits; buyer accepted cap to reduce friction.",
+            "year": 2021
+          },
+          {
+            "context": "WTG+LTSA, Baltic, spare parts lead time penalties",
+            "supplier_opening_ask_pct": 6.5,
+            "settled_pct": 4.5,
+            "primary_trade_used": "penalties replaced with KPI reporting + improvement plan",
+            "outcome": "won",
+            "notes": "Supplier moved once penalties became process-based rather than financial.",
+            "year": 2024
+          },
+          {
+            "context": "WTG+LTSA, North Sea, warranty exclusions negotiation",
+            "supplier_opening_ask_pct": 8.5,
+            "settled_pct": 6.0,
+            "primary_trade_used": "narrow a subset of exclusions; keep cap stable",
+            "outcome": "mixed",
+            "notes": "Supplier traded only small improvements; remained strict on liability.",
+            "year": 2020
+          }
+        ]
+      }
+    ]
+  }
