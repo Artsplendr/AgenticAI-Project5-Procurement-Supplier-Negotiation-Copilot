@@ -119,5 +119,5 @@ The copilot:
 The procurement specialist remains in control, but with clear context, memory, and instant trade options overview.
 
 ![Procurement-Supplier-Negotiation-Copilot](assets/image1.png)
-<br><br>
+<br><br><br><br>
 ![Procurement-Supplier-Negotiation-Copilot](assets/image2.png)
